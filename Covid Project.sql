@@ -30,13 +30,6 @@ GROUP BY Location, population
 ORDER BY TotalDeaths desc
 
 
--- Showing total deaths by continent
-Select continent, MAX(cast(total_deaths as int)) as TotalDeaths
-FROM CovidDeaths
-WHERE continent is not null
-GROUP BY continent
-ORDER BY TotalDeaths desc
-
 
 -- Showing total deaths by continent CORRECTED
 Select Location, MAX(cast(total_deaths as int)) as TotalDeaths
