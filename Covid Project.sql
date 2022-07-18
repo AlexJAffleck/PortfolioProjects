@@ -1,8 +1,3 @@
-Select Location, date, total_cases, new_cases, total_deaths, population
-FROM CovidDeaths
-order by 1,2
-
-
 -- Total Cases vs total Deaths
 -- shows likelihood of dying if you contract covid in your country
 Select Location, date, total_cases, total_deaths, (total_deaths/total_cases) * 100 as DeathPercentage
